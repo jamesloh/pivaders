@@ -1,4 +1,4 @@
-A Space Invaders clone written in Python and Pygame for the Raspberry Pi.
+A Space Invaders clone written in Python and Pygame for the Raspberry Pi. Modified to run in Python 3 on a desktop PC.
 
 The original challenge was to write a playable and challenging re-make in around 300 lines of code (v0.1). 
 

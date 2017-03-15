@@ -1,5 +1,3 @@
-#!/usr/bin/env python2
-
 import pygame, random
 
 BLACK = (0, 0, 0)
@@ -63,7 +61,8 @@ class Alien(pygame.sprite.Sprite):
 
 
 class Ammo(pygame.sprite.Sprite):
-    def __init__(self, color, (width, height)):
+    def __init__(self, color, xxx_todo_changeme):
+        (width, height) = xxx_todo_changeme
         pygame.sprite.Sprite.__init__(self)
         self.image = pygame.Surface([width, height])
         self.image.fill(color)
@@ -78,7 +77,8 @@ class Ammo(pygame.sprite.Sprite):
 
 
 class Block(pygame.sprite.Sprite):
-    def __init__(self, color, (width, height)):
+    def __init__(self, color, xxx_todo_changeme1):
+        (width, height) = xxx_todo_changeme1
         pygame.sprite.Sprite.__init__(self)
         self.image = pygame.Surface([width, height])
         self.image.fill(color)
@@ -313,7 +313,7 @@ class Game(object):
                 self.all_sprite_list.add(barrier)
 
     def make_defenses(self):
-        for spacing, spacing in enumerate(xrange(4)):
+        for spacing, spacing in enumerate(range(4)):
             self.make_barrier(3, 9, spacing)
 
     def kill_all(self):
